@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Começo do código referente ao cabeçalho*/
+
+.cabecalho-principal {
+    width: 100%;
+    height: 100px;
+
+    background-color: #303b7ced;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+}
+
+.cabecalho-principal button {
+
+
+    background-color: aliceblue;
+
+    margin: auto 20px;
+
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    font-size: 20px;
+
+
+}
+
+.cabecalho-principal button:hover {
+    scale: 1.2;
+
+}
+
+.cabecalho-principal img {
+    width: 180px;
+
+
+    margin-left: -330px;
+
+    cursor: pointer;
+}
+
+/*Fim do código referente ao cabeçalho*/
+
+/*====================================*/
+
+/*Começo do código referente ao baner principal*/
+
+.baner-principal {
+    margin-top: 100px;
+    height: 700px;
+    background-image: url(https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/05/solo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-bottom: solid black 2px;
+
+    display: flex;
+}
+
+.links {
+    padding-top: 150px;
+
+}
+
+
+.baner-principal button {
+
+    width: 300px;
+    height: 50px;
+
+    margin: 10px auto;
+    margin-left: 80px;
+
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    background-color: aliceblue;
+
+
+}
+
+.baner-principal button:hover {
+    scale: 1.2;
+}
+
+
+.sub-baner {
+
+    width: 40%;
+    height: 150px;
+    padding: 60px;
+
+    border-radius: 30px;
+
+    background-color: #303b7c;
+    color: aliceblue;
+
+    margin-left: 300px;
+    margin-top: 100px;
+
+    font-size: 20px;
+}
+
+/*Fim do código refrente ao baner principal*/
+
+/*=========================================*/
+
+/*Começo do código referente ao corpo do projeto*/
+
+.corpo-principal {
+
+    height: auto;
+
+    background-color: rgb(189, 189, 189);
+
+    padding-top: 100px;
+
+    background-color: rgba(167, 207, 223, 1);
+
+
+}
+
+.texto-principal {
+    width: 80%;
+    margin: 0 auto;
+
+
+    padding: 20px;
+
+    background-color: aliceblue;
+    color: black;
+    border: solid black 2px;
+    border-radius: 30px;
+
+    font-size: 170%;
+}
+
+.texto-principal h1 {
+    margin-top: 80px;
+}
+
+/*Fim do código referente ao corpo*/
+/*================================*/
+/*Começo do código referente ao rodapé do site*/
+
+.roda-pe{
+
+    padding: 20px;
+
+    border-top: solid black 2px;
+
+}
