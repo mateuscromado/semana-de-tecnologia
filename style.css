@@ -59,12 +59,43 @@ body{
     width: 100px;
 
 
-    margin-left: -250px;
+    margin-left: -290px;
 
     cursor: pointer;
 }
 
 /*Fim do código referente ao cabeçalho*/
+
+/*Responsividade do cabeçalho*/
+
+@media (max-width:1024px){
+
+    .cabecalho-principal{
+        width: 100%;
+        height: 60px;
+    }
+
+    .cabecalho-principal img{
+
+        height: 60px;
+        width: auto;
+        margin: 0;
+        margin-left: -50px;
+    }
+    
+    .cabecalho-principal button{
+        width: auto;
+        font-size: 14px;
+        
+        margin: auto 0; 
+        padding: 5px 5px 5px 5px !important;
+        
+        border-radius: 15px;
+
+    }
+}
+
+/*Fim da responsividade do cabeçalho*/
 
 
 /*Começo do código referente ao baner principal*/
@@ -72,7 +103,7 @@ body{
 
 
 .baner-principal {
-    margin-top: 100px;
+    margin-top: 60px;
     height: 700px;
     background-image: url(https://content.news.ifood.com.br/uploads/2021/10/43916a4f785e19fc3b17bca8c12a91c1_cms-1633268217900-whatsapp-image-2021-10-03-at-103440jpeg.jpeg);
     background-repeat: no-repeat;
@@ -154,6 +185,36 @@ body{
 
 
       
+}
+
+@media (max-width:1024px) {
+
+    .baner-principal{
+        background-position: center;
+
+        background-attachment: fixed;
+    }
+
+    .links{
+        margin-left: -70px;
+    }
+
+    .links button{
+        width:  80%;
+    }
+
+    .sub-baner{
+        margin-top: 150px;
+        margin-left: 90px;
+
+        padding: 10px;
+        width: auto;
+        height: 300px;
+
+        font-size: 15px;
+    }
+
+
 }
 
 
