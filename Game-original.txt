@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sustentabilidade|Semana TEC</title>
+        <link rel="stylesheet" href="style.css">
+    
+    
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+        <link rel="shortcut icon" href="imagens/ETE-sustentável.jpg" type="image/x-icon">
+    
+    </head>
+
+    <body>
+        <header id="header">
+
+            <div class="cabecalho-principal">
+    
+    
+                <a href="index.html">
+    
+                    <div class="ete-imagem">
+                        <img src="imagens/ETE-sustentável.jpg" alt="">
+                    </div>
+    
+                </a>
+    
+                <form action="index.html">
+    
+                    <button type="submit">INÍCIO</button>
+                </form>
+    
+                <form action="sustentabilidade.html">
+                    <button type="submit">SUSTENTABILIDADE</button>
+                </form>
+    
+                <form action="#header">
+                    <button type="submit">GAME</button>
+                </form>
+    
+                <form action="equipe.html" style="margin-right:-50px">
+                    <button type="submit">EQUIPE</button>
+                </form>
+    
+    
+    
+            </div>
+</header>    
+
+    </body>
+</html>
+
+

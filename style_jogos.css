@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #B0BEC5;
+    /* Cor de fundo azul */
+    margin: 0;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#quiz-container {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    animation: slide-in 0.5s ease-out;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin: 10px;
+    
+    cursor: pointer;
+    border: none;
+    background-color: #388E3C;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #B0BEC5;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: rgb(69, 87, 110);
+    /* Tom mais escuro de azul ao passar o mouse */
+}
+
+
+/*Celular responsivo*/
+@media (max-width: 1024px){
+    .cabeçalho{
+        margin-top: 0 auto !important;
+    }
+
+    .botão{
+        margin-left: 30px !important;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.cabeçalho {
+    
+    color: aliceblue;
+    background-color: #D7CCC8;
+    text-align: center;
+    box-sizing: border-box;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 20px;
+    font-size: 25px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    position: fixed;
+    top: 0; /* Manterá o cabeçalho no topo */
+    z-index: 999; /* Ajuste conforme necessário para empilhamento */
+    animation-name: cabe2;
+    animation-duration: 1.5s;
+    opacity: 90%;
+    /* margin-bottom: 100px; (pode ser removido, já que o cabeçalho é fixo) */
+}
+
+    
+
+    
+
+
+
+.imagem1 {
+    display: flex;
+    float: left;
+    margin-top: -12px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.botão {
+    margin-top: -7px;
+    margin-left: 450px;
+    margin-right: 20;
+    background-color: #388E3C ;
+    color: rgb(255, 255, 255);
+        font-size: 13px;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.753);
+    border-radius: 20px 20px 20px 20px;
+    transition: 0.3s;
+}
+
+.botão:hover {
+
+    background-color: rgb(69, 87, 110);;
+    border-radius: 0px 20px 0 20px;
+}
+.cabecalho-principal{
+    display: flex;
+    align-items: center;
+
+}
+
+.cabecalho-principal {
+    width: 100%;
+    height: 100px;
+
+    background-color: #1355AB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:solid black 2px;
+
+    position: fixed;
+    top: 0;
+}
+
+
+
+.cabecalho-principal img{
+    width: 100px;
+}
+
+.cabecalho-principal button{
+    background-color: aliceblue;
+
+    margin: auto 20px;
+    color: black;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    font-size: 20px;
+    border: solid black 2px;
+    padding-bottom: 20px;
+
+}
+
+.cabecalho-principal button:hover {
+    background-color: rgb(199, 208, 216);
+
+    border-radius: 0 20px 0 20px;
+
+}
+.cabecalho-principal img {
+    margin-left: -620px;
+}
+
+#quiz-container{
+margin: 0 auto;
+margin-top: 300px;
+
+}
+@keyframes cabe1 {
+    0% {
+        color: #388E3C;
+        opacity: 0% 0.1s;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes cabe2 {
+    0% {
+        width: 0%;
+        opacity: 0%;
+
+    }
+
+    100% {
+        width: 100%;
+        opacity: 90%;
+
+    }
+}
+
+
