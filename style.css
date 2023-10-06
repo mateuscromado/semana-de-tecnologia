@@ -305,6 +305,24 @@ body{
     margin-top: 80px;
 }
 
+.texto-principal p{
+    text-indent: 100px;
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+
+
+}
+
+.credito-principal{
+    text-align: center;
+}
+.credito-principal h3{
+    padding: 10px;
+}
+.credito-principal h1{
+    padding:-100;
+}
 /*configuração das imagens que aparecerão entre os textos*/
 
 .texto-principal img {
