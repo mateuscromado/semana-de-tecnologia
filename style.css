@@ -20,15 +20,16 @@ body{
 .cabecalho-principal {
     width: 100%;
     height: 100px;
-
-    background-color: #1355AB;
     display: flex;
+    background-color: #1355AB;
     justify-content: center;
     align-items: center;
     border-bottom:solid black 2px;
 
     position: fixed;
     top: 0;
+    user-select: none;
+    font-weight: bolder !important;
 }
 
 .cabecalho-principal button {
@@ -38,7 +39,7 @@ body{
 
     margin: auto 20px;
 
-    border-radius: 20px;
+    border-radius: 15px !important;
     width: 200px;
     height: 40px;
     cursor: pointer;
@@ -64,7 +65,17 @@ body{
 
     cursor: pointer;
 }
+.menu{
+    display: flex;
+}
 
+header{
+    display: block;
+}
+
+.sub-menu{
+    display: flex;
+}
 /*Fim do código referente ao cabeçalho*/
 
 /*Responsividade do cabeçalho*/

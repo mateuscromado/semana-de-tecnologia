@@ -1,0 +1,46 @@
+.cabecalho-principal{
+    display: block;
+}
+.cabecalho-principal button{
+    margin: 0;
+}
+
+.cabecalho-principal img{
+    margin-left: -270px;
+}
+.menu{
+    justify-content: center;
+}
+.menu-3{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.sub-menu{
+    margin-top: 10px;
+    justify-content: center ;
+
+}
+
+.sub-menu button{
+    height: 30px;
+    font-size: 15PX;
+    
+}
+
+
+/*responsividade do menu*/
+
+@media (max-width:1024px){
+    .sub-menu button{
+        width: 70px;
+        height: 30px;
+
+        margin: 0;
+
+        font-size: 6px;
+
+}
+}
