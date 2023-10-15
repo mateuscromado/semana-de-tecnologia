@@ -35,12 +35,16 @@
 
 @media (max-width:1024px){
     .sub-menu button{
-        width: 70px;
+        width: auto;
         height: 30px;
 
-        margin: 0;
 
-        font-size: 6px;
+        font-size: 10px;
+        padding:auto;
+    }
+
+    .sub-menu button :hover{
+        scale: 1;
     }
 .menu{
 margin-left:-40px;
