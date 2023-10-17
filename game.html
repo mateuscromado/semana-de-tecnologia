@@ -6,8 +6,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustentabilidade|Semana TEC</title>
-    <link rel="stylesheet" href="style_jogos.css">
+    <title>Sustentabilidade | Semana TEC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
     <link rel="shortcut icon" href="imagens/ETE-sustentável.jpg" type="image/x-icon">
 
 
@@ -26,170 +27,81 @@
 
     <header id="ccc">
         <div class="cabecalho-principal">
-        
-        
+
+
             <a href="index.html">
-        
+
                 <div class="ete-imagem">
                     <img src="imagens/ETE-sustentável.jpg" alt="">
                 </div>
-        
+
             </a>
-        
+
             <form action="index.html">
-        
+
                 <button type="submit">INÍCIO</button>
             </form>
-        
-                
-        
-        
-        
+
+            <form action="sustentabilidade.html">
+                <button type="submit">SUSTENTABILIDADE</button>
+            </form>
+
+            <form action="#header">
+                <button type="submit">GAME</button>
+            </form>
+
+            <form action="equipe.html" style="margin-right:-50px">
+                <button type="submit">EQUIPE</button>
+            </form>
+
+
+
+
         </div>
     </header>
-    <div id="quiz-container">
-        <div id="question"></div>
-        <div id="options"></div>
-        <button id="next-btn" disabled>Próxima Pergunta</button>
-        <div id="feedback"></div>
-        <div id="score"></div>
+    <div class="corpo-principal">
+
+        <div class="texto-principal">
+
+            <div class="quiz">
+
+                <img src="imagens/img quiz.png" alt="">
+                <h2>QUIZ</h2>
+                
+                <div class="linkkk">
+                    <a href="quiz.html">JOGAR</a>
+
+                </div>
+
+            </div>
+
+            <div class="game-mb">
+
+                <img src="imagens/img game.png" alt="">
+                <h2>GAME DA COLETA </h2>
+
+                
+                <div class="linkkk">
+                    <a href="https://scratchgo.app/webplayer.html#905805600" target="_blank">JOGAR</a>
+
+                </div>
+
+
+            </div>
+
+            <div class="game-pc">
+
+                <img src="imagens/img game.png" alt="">
+                <h2>GAME DA COLETA</h2>
+                 
+                <div class="linkkk">
+                    <a href="https://scratch.mit.edu/projects/905805600/" target="_blank">JOGAR</a>
+
+                </div>
+
+
+            </div>
+        </div>
     </div>
-    <script src="quiz.js"></script>
 
-    
 </body>
-
-</html>
-
-<script>
-    const quizContainer = document.getElementById("quiz-container");
-    const questionElement = document.getElementById("question");
-    const optionsElement = document.getElementById("options");
-    const nextButton = document.getElementById("next-btn");
-    const feedbackElement = document.getElementById("feedback");
-    const scoreElement = document.getElementById("score");
-
-    let questionIndexList = [];
-    let currentQuestionIndex = 0;
-    let score = 0;
-
-    // Função para embaralhar as perguntas
-    function shuffleQuestions() {
-        questionIndexList = Array.from({ length: questions.length }, (_, index) => index);
-        for (let i = questionIndexList.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [questionIndexList[i], questionIndexList[j]] = [questionIndexList[j], questionIndexList[i]];
-        }
-
-
-    }
-
-    const questions = [
-        {
-            question: "'Equilíbrio entre a disponibilidade dos recursos naturais e a exploração deles por parte da sociedade.' A afirmação corresponde a:",
-            options: ["a)Efeito estufa", "b)Econômia", "c)Preservação", "d)sustentabilidade"],
-            answer: 3
-        },
-        {
-            question: "'Proteger algo em seu estado original ou natural. Isso significa manter algo exatamente como é' Corresponde a:",
-            options: ["a)Preservação", "b)Fotossíntese", "c)Conservação", "d)Biomassa"],
-            answer: 0
-        },
-        {
-            question: "Qual a energia que tem como fonte a força do fluxo da água?",
-            options: ["a)Urbana", "b)Termoelétrica", "c)Hidrelétrica", "d)A vapor"],
-            answer: 2
-        },
-        {
-            question: "A biomassa é obtida apartir de:",
-            options: ["a)Água", "b)Radiação solar", "c)Materiais orgânicos", "d)Materiais inorgânicos"],
-            answer: 2
-        },
-
-        {
-            question: "O tripé da sustentabilidade é composto por",
-            options: ["a)Cooperação, amizade e empatia", "b)Econômizar, reutilizar e sintetizar", "c)Social, econômico e ambiental", "d)Animais, seres humanos e natureza"],
-            answer: 3
-        },
-
-        {
-            question: "'Os princípios do capitalismo com uma forte ênfase na responsabilidade ambiental'",
-            options: ["a)Ecodesenvolvimento", "b)Socialismo", "c)Energia eólica", "d)Ecocapitalismo"],
-            answer: 3
-        },
-        {
-            question: "A sustentabilidade é utilizar mais que preservar",
-            options: ["a)Falso", "b)Verdadeiro",],
-            answer: 0
-        },
-        {
-            question: "Que prática agrícola envolve o cultivo de diferentes culturas em rotação em uma mesma área para melhorar a saúde do solo?",
-            options: ["a)Monocultura", "b)Plantio direto", "c)Rotação de culturas", "d)Adubação química"],
-            answer: 2
-        },
-        {
-            question: "Qual é o nome da comunidade de microrganismos que vive em simbiose nas raízes das plantas e ajuda na absorção de nutrientes?",
-            options: ["a)Bactérias", "b)Fungos micorrízicos", "c)Vírus", "d)Protozoários"],
-            answer: 1
-        },
-        {
-            question: "Qual é o processo pelo qual o vento ou a água transporta partículas de solo de um lugar para outro?",
-            options: ["a)Decomposição", "b)Sedimentação", "c)Erosão", "d)Evaporação"],
-            answer: 2
-        },
-       
-        
-        // Adicione mais perguntas com suas opções e respostas aqui...
-    ];
-
-    function showQuestion(question) {
-        questionElement.textContent = question.question;
-        optionsElement.innerHTML = "";
-
-        question.options.forEach((option, index) => {
-            const button = document.createElement("button");
-            button.textContent = option;
-            button.addEventListener("click", () => selectAnswer(index));
-            optionsElement.appendChild(button);
-        });
-
-        nextButton.disabled = true;
-    }
-
-    function selectAnswer(selectedIndex) {
-        const currentQuestion = questions[currentQuestionIndex];
-        if (selectedIndex === currentQuestion.answer) {
-            score++;
-            feedbackElement.textContent = "Resposta correta!";
-        } else {
-            feedbackElement.textContent = "Resposta incorreta.";
-        }
-
-        nextButton.disabled = false;
-        optionsElement.querySelectorAll("button").forEach(button => {
-            button.disabled = true;
-        });
-    }
-
-    function showNextQuestion() {
-        currentQuestionIndex++;
-        if (currentQuestionIndex < questions.length) {
-            showQuestion(questions[currentQuestionIndex]);
-            feedbackElement.textContent = "";
-        } else {
-
-            quizContainer.innerHTML = `<h2>Jogo concluído!</h2><p>Sua pontuação final é: ${score} de ${questions.length}</p>`;
-            
-
-        }
-    }
-
-
-    nextButton.addEventListener("click", showNextQuestion);
-
-    showQuestion(questions[currentQuestionIndex]);
-
-    shuffleQuestions();
-    showQuestion(questions[questionIndexList[currentQuestionIndex]]);
-
-</script>

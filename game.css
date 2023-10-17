@@ -1,0 +1,97 @@
+
+*{
+    text-align: center !important;
+}
+.texto-principal{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.texto-principal div{
+    background-color: rgb(19, 85, 171);
+    width: 40%;
+    margin: 10px;
+    border-radius: 10px;
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.texto-principal div:hover{
+    scale: 1.05;
+}
+
+.texto-principal img{
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.texto-principal div h2{
+    border: none;
+}
+
+.texto-principal p{
+    text-indent: 0px;
+}
+.linkkk{
+    display: flex;
+    justify-content: center;
+}
+.texto-principal a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+
+    padding: 5px;
+    text-align: center;
+    margin-left: 140%;
+
+    border-radius: 10px;
+}
+
+.game-mb{
+    display: none;
+}
+
+.game-pc{
+    display: block;
+}
+
+@media (max-width:1024px){
+    .game-mb{
+        display: block;
+    }
+
+    .game-pc{
+        display: none;
+    }
+
+    .texto-principal{
+        display: block;
+    }
+
+    .texto-principal div{
+        width: 90%;
+
+    }
+
+    .texto-principal a{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .texto-principal div:hover{
+        scale: 1;
+    }
+
+    .texto-principal img{
+        height: 200px;
+    }
+}
